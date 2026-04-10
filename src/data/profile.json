@@ -1,8 +1,8 @@
 {
   "name": "Dinakaran S",
   "title": "Team Lead - Banking Operations / Static Data",
-  "tagline": "Banking operations professional focused on static data, trade support, controls, and process improvement.",
-  "summary": "Experienced in banking operations, rate administration, SWIFT account maintenance, charge code updates, and testing support. Building a stronger profile around digital workflows, data visibility, and technology-enabled operations.",
+  "tagline": "Banking operations professional with hands-on experience in static data, trade support, controls, and process improvement.",
+  "summary": "Experienced in banking operations, rate administration, SWIFT account maintenance, charge code updates, and testing support within control-sensitive environments. Building a stronger profile around digital workflows, operational reporting, and technology-enabled process improvement.",
   "resumeFile": "/Dinakaran-Resume.pdf",
   "github": "https://github.com/Dina7s",
   "navigation": [
@@ -12,7 +12,7 @@
     { "label": "Skills", "href": "#skills" },
     { "label": "Contact", "href": "#contact" }
   ],
-  "about": "I work at the intersection of operational accuracy and business support. My background includes banking operations, trade-related static data activities, rate management, and change support, with a growing focus on technology-enabled workflows and reporting-oriented problem solving.",
+  "about": "I work at the intersection of operational accuracy, business support, and process discipline. My background includes banking operations, trade-related static data activities, rate management, account maintenance, and change support. I am now shaping that experience into a stronger technology-enabled profile focused on workflow improvement, reporting visibility, and dependable delivery.",
   "highlights": [
     {
       "title": "Current Role",
@@ -20,11 +20,25 @@
     },
     {
       "title": "Strength",
-      "description": "Trusted for accuracy, urgency, and reliable execution across processes where small errors can create meaningful downstream impact."
+      "description": "Trusted for accuracy, urgency, and reliable execution across processes where even small errors can create downstream business impact."
     },
     {
       "title": "Direction",
-      "description": "Expanding into tech-enabled operations through portfolio work, digital tooling, and structured data presentation."
+      "description": "Expanding into tech-enabled operations through portfolio work, structured data presentation, and workflow-oriented digital problem solving."
+    }
+  ],
+  "valueAreas": [
+    {
+      "title": "Operational Control",
+      "description": "Comfortable working in environments where accuracy, approvals, and audit readiness matter every day."
+    },
+    {
+      "title": "Business Responsiveness",
+      "description": "Used to handling urgent requests while keeping turnaround time, data quality, and process discipline in balance."
+    },
+    {
+      "title": "Process Improvement",
+      "description": "Interested in making workflows clearer, faster, and easier to track through better structure and simple digital tools."
     }
   ],
   "experience": [
@@ -32,13 +46,13 @@
       "company": "Standard Chartered Bank (SCB)",
       "role": "Team Lead - Static Data Unit (Trade)",
       "duration": "Feb 2021 - Present",
-      "summary": "Owns key static data and rate administration activities supporting trade operations in a controlled banking environment.",
+      "summary": "Owns key static data and rate administration activities supporting trade operations in a controlled banking environment, with a strong focus on continuity, accuracy, and change readiness.",
       "highlights": [
-        "Lead BAU activities across rate management and operational administration.",
-        "Maintain Forex rates, FTP updates, and Liquidity Premium changes with strong control and timeliness.",
-        "Manage SWIFT account setup and amendments for business requests.",
-        "Create and amend charge codes aligned with operational requirements.",
-        "Support UVT testing for new implementations and process changes.",
+        "Lead BAU activities across rate management and operational administration for trade-related processes.",
+        "Maintain Forex rates, FTP updates, and Liquidity Premium changes with strong focus on timeliness, accuracy, and control.",
+        "Manage SWIFT account setup and amendments for business requests in a control-sensitive operating environment.",
+        "Create and amend charge codes aligned with operational requirements and business needs.",
+        "Support UVT testing for new implementations and process changes before rollout.",
         "Drive workflow improvement while supporting regulatory compliance and internal standards."
       ]
     },
@@ -82,9 +96,22 @@
     "Stakeholder Communication",
     "Client Handling"
   ],
+  "projects": [
+    {
+      "name": "Banking Process Dashboard",
+      "description": "A dashboard concept for tracking tasks, workflow status, exceptions, and service timelines in an operations team."
+    },
+    {
+      "name": "Rate Management Simulator",
+      "description": "A training-oriented concept that explains how rate updates move through validation, approval, and final maintenance steps."
+    },
+    {
+      "name": "Static Data Workflow Tool",
+      "description": "A simple workflow idea for handling account setup, amendment requests, approvals, and audit notes with better visibility."
+    }
+  ],
   "contact": {
     "email": "dina257ma@gmail.com",
-    "phone": "+91 81248 64351",
     "location": "Hosur, Tamil Nadu, India",
     "github": "https://github.com/Dina7s"
   }

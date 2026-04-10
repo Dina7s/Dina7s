@@ -14,8 +14,8 @@ export function ContactCard({ contact }) {
         <p className="mt-3 text-base text-[var(--color-text)]">{contact.email}</p>
       </a>
       <div className="panel">
-        <p className="text-sm uppercase tracking-[0.25em] text-[var(--color-muted)]">Phone</p>
-        <p className="mt-3 text-base text-[var(--color-text)]">{contact.phone}</p>
+        <p className="text-sm uppercase tracking-[0.25em] text-[var(--color-muted)]">Location</p>
+        <p className="mt-3 text-base text-[var(--color-text)]">{contact.location}</p>
       </div>
       <a className="panel transition hover:-translate-y-1" href={contact.github} target="_blank" rel="noreferrer">
         <p className="text-sm uppercase tracking-[0.25em] text-[var(--color-muted)]">GitHub</p>

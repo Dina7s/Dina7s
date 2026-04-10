@@ -34,6 +34,26 @@ function App() {
         </Section>
 
         <Section
+          id="strengths"
+          eyebrow="Value"
+          title="How I contribute in modern operations teams."
+          intro="My experience is strongest where process reliability, business responsiveness, and structured execution need to work together."
+        >
+          <div className="grid gap-4 md:grid-cols-3">
+            {profile.valueAreas.map((item) => (
+              <article key={item.title} className="panel">
+                <p className="text-sm uppercase tracking-[0.25em] text-[var(--color-muted)]">
+                  {item.title}
+                </p>
+                <p className="mt-3 text-sm leading-7 text-[var(--color-soft)]">
+                  {item.description}
+                </p>
+              </article>
+            ))}
+          </div>
+        </Section>
+
+        <Section
           id="experience"
           eyebrow="Experience"
           title="Career path shaped by control, accuracy, and delivery."
@@ -52,10 +72,28 @@ function App() {
         </Section>
 
         <Section
+          id="projects"
+          eyebrow="Projects"
+          title="Portfolio directions aligned with operations and workflow improvement."
+          intro="These project concepts reflect the kind of practical digital work that connects well with my background in banking operations and structured process execution."
+        >
+          <div className="grid gap-4 md:grid-cols-3">
+            {profile.projects.map((project) => (
+              <article key={project.name} className="panel">
+                <h3 className="text-xl font-semibold text-[var(--color-text)]">{project.name}</h3>
+                <p className="mt-3 text-sm leading-7 text-[var(--color-soft)]">
+                  {project.description}
+                </p>
+              </article>
+            ))}
+          </div>
+        </Section>
+
+        <Section
           id="contact"
           eyebrow="Contact"
           title="Open to operations, reporting, and tech-enabled workflow opportunities."
-          intro="This portfolio is designed to present a clear transition path into modern operational and digital roles."
+          intro="This portfolio presents a practical profile built on execution, control, and steady progression toward modern digital operations work."
         >
           <ContactCard contact={profile.contact} />
         </Section>
