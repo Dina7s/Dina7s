@@ -1,0 +1,97 @@
+{
+  "name": "Dinakaran S",
+  "title": "Team Lead - Banking Operations / Static Data",
+  "summary": "Banking operations professional with experience in static data management, trade support, rate administration, and process control within high-volume financial services environments. Proven ability to lead BAU operations, support change testing, and maintain strong compliance standards across critical reference data activities. Combines operational accuracy with growing interest in technology-enabled process improvement, workflow automation, and data-driven reporting.",
+  "skills": [
+    "Static Data Management",
+    "Banking Operations",
+    "Trade Support",
+    "Rate Management",
+    "Forex Rate Updates",
+    "FTP Updates",
+    "Liquidity Premium Maintenance",
+    "SWIFT Account Creation and Amendments",
+    "Charge Code Creation and Amendments",
+    "UVT Testing",
+    "Process Improvement",
+    "Regulatory Compliance",
+    "Operational Controls",
+    "Stakeholder Communication",
+    "Client Handling",
+    "Research",
+    "Data Entry"
+  ],
+  "experience": [
+    {
+      "company": "Standard Chartered Bank (SCB)",
+      "role": "Team Lead - Static Data Unit (Trade)",
+      "duration": "Feb 2021 - Present",
+      "location": "India",
+      "highlights": [
+        "Lead BAU static data activities across rate management and administrative processes supporting trade-related operations.",
+        "Manage Forex rate updates, FTP updates, and Liquidity Premium rate maintenance to ensure timely and accurate downstream processing.",
+        "Handle SWIFT account creation and amendments with strong focus on control, accuracy, and turnaround time.",
+        "Create and amend charge codes in line with business requirements and operational standards.",
+        "Supported UVT testing for new implementations and process changes to validate readiness before rollout.",
+        "Drive process improvement and support regulatory compliance by strengthening controls and refining workflows."
+      ]
+    },
+    {
+      "company": "Ray Solutions Private Limited",
+      "role": "Digital Advertising Executive",
+      "duration": "2019 - 2020",
+      "location": "India",
+      "highlights": [
+        "Supported digital advertising execution across text and visual ads for LED module products.",
+        "Worked directly with clients to gather requirements and maintain delivery communication.",
+        "Built strong coordination and execution skills in a deadline-driven environment."
+      ]
+    },
+    {
+      "company": "Xiaomi Technology Private Limited",
+      "role": "Research and Data Entry Operator",
+      "duration": "2020",
+      "location": "India",
+      "highlights": [
+        "Performed research and data entry tasks with high attention to accuracy and consistency.",
+        "Supported information workflows requiring dependable turnaround and detail-oriented execution."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Vehicle Ignition and Alert System Using Biometrics, GSM and GPS",
+      "description": "Academic engineering project focused on improving vehicle security using fingerprint authentication, GSM alerts, and GPS-based tracking concepts.",
+      "highlights": [
+        "Designed a fingerprint-based ignition workflow for authorized vehicle access.",
+        "Integrated alert-oriented thinking through GSM and GPS modules."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Er. Perumal Manimekalai College of Engineering, Hosur",
+      "degree": "B.E. in Electronics and Communication Engineering",
+      "duration": "2015 - 2019",
+      "score": "64.3%"
+    },
+    {
+      "institution": "Govt. RV Boys Higher Secondary School, Hosur",
+      "degree": "Higher Secondary Certificate (HSC)",
+      "duration": "2015",
+      "score": "51%"
+    },
+    {
+      "institution": "St. Mary Magdalene Metric School, Hosur",
+      "degree": "SSLC",
+      "duration": "2013",
+      "score": "88.4%"
+    }
+  ],
+  "contact": {
+    "email": "dina257ma@gmail.com",
+    "phone": "+91 81248 64351",
+    "location": "Hosur, Tamil Nadu, India",
+    "github": "https://github.com/Dina7s"
+  }
+}

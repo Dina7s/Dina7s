@@ -1,0 +1,91 @@
+{
+  "name": "Dinakaran S",
+  "title": "Team Lead - Banking Operations / Static Data",
+  "tagline": "Banking operations professional focused on static data, trade support, controls, and process improvement.",
+  "summary": "Experienced in banking operations, rate administration, SWIFT account maintenance, charge code updates, and testing support. Building a stronger profile around digital workflows, data visibility, and technology-enabled operations.",
+  "resumeFile": "/Dinakaran-Resume.pdf",
+  "github": "https://github.com/Dina7s",
+  "navigation": [
+    { "label": "Home", "href": "#home" },
+    { "label": "About", "href": "#about" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Skills", "href": "#skills" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "about": "I work at the intersection of operational accuracy and business support. My background includes banking operations, trade-related static data activities, rate management, and change support, with a growing focus on technology-enabled workflows and reporting-oriented problem solving.",
+  "highlights": [
+    {
+      "title": "Current Role",
+      "description": "Leading Static Data Unit activities in a trade environment at Standard Chartered Bank, with ownership across BAU support, rate maintenance, and control-sensitive updates."
+    },
+    {
+      "title": "Strength",
+      "description": "Trusted for accuracy, urgency, and reliable execution across processes where small errors can create meaningful downstream impact."
+    },
+    {
+      "title": "Direction",
+      "description": "Expanding into tech-enabled operations through portfolio work, digital tooling, and structured data presentation."
+    }
+  ],
+  "experience": [
+    {
+      "company": "Standard Chartered Bank (SCB)",
+      "role": "Team Lead - Static Data Unit (Trade)",
+      "duration": "Feb 2021 - Present",
+      "summary": "Owns key static data and rate administration activities supporting trade operations in a controlled banking environment.",
+      "highlights": [
+        "Lead BAU activities across rate management and operational administration.",
+        "Maintain Forex rates, FTP updates, and Liquidity Premium changes with strong control and timeliness.",
+        "Manage SWIFT account setup and amendments for business requests.",
+        "Create and amend charge codes aligned with operational requirements.",
+        "Support UVT testing for new implementations and process changes.",
+        "Drive workflow improvement while supporting regulatory compliance and internal standards."
+      ]
+    },
+    {
+      "company": "Ray Solutions Private Limited",
+      "role": "Digital Advertising Executive",
+      "duration": "2019 - 2020",
+      "summary": "Worked on campaign execution and client coordination for digital advertising projects.",
+      "highlights": [
+        "Supported text and visual ad delivery for LED module products.",
+        "Handled client coordination and day-to-day delivery follow-up.",
+        "Developed communication and execution skills in a deadline-driven environment."
+      ]
+    },
+    {
+      "company": "Xiaomi Technology Private Limited",
+      "role": "Research and Data Entry Operator",
+      "duration": "2020",
+      "summary": "Supported information handling and research tasks requiring accuracy and consistency.",
+      "highlights": [
+        "Performed research and data entry activities with attention to detail.",
+        "Contributed to dependable workflow completion and data quality."
+      ]
+    }
+  ],
+  "skills": [
+    "Static Data Management",
+    "Banking Operations",
+    "Trade Support",
+    "Rate Management",
+    "Forex Rate Updates",
+    "FTP Updates",
+    "Liquidity Premium Maintenance",
+    "SWIFT Account Maintenance",
+    "Charge Code Administration",
+    "UVT Testing Support",
+    "Process Improvement",
+    "Regulatory Compliance",
+    "Operational Controls",
+    "Data Accuracy",
+    "Stakeholder Communication",
+    "Client Handling"
+  ],
+  "contact": {
+    "email": "dina257ma@gmail.com",
+    "phone": "+91 81248 64351",
+    "location": "Hosur, Tamil Nadu, India",
+    "github": "https://github.com/Dina7s"
+  }
+}
