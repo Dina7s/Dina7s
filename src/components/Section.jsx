@@ -8,7 +8,7 @@ export function Section({ id, eyebrow, title, intro, children }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.55 }}
-      className="rounded-[1.75rem] border border-white/10 bg-[var(--color-panel)] px-6 py-8 sm:px-8 sm:py-10"
+      className="rounded-[1.75rem] border border-[var(--color-line)] bg-[var(--color-panel)] px-6 py-8 sm:px-8 sm:py-10"
     >
       <p className="text-sm uppercase tracking-[0.32em] text-[var(--color-accent)]">{eyebrow}</p>
       <div className="mt-4 max-w-3xl">

@@ -3,13 +3,15 @@
   "title": "Team Lead - Banking Operations / Static Data",
   "tagline": "Banking operations professional with hands-on experience in static data, trade support, controls, and process improvement.",
   "summary": "Experienced in banking operations, rate administration, SWIFT account maintenance, charge code updates, and testing support within control-sensitive environments. Building a stronger profile around digital workflows, operational reporting, and technology-enabled process improvement.",
-  "resumeFile": "/Dinakaran-Resume.pdf",
+  "resumeFile": "/Dinakaran-Resume-Improved.pdf",
   "github": "https://github.com/Dina7s",
   "navigation": [
     { "label": "Home", "href": "#home" },
     { "label": "About", "href": "#about" },
+    { "label": "Value", "href": "#strengths" },
     { "label": "Experience", "href": "#experience" },
     { "label": "Skills", "href": "#skills" },
+    { "label": "Projects", "href": "#projects" },
     { "label": "Contact", "href": "#contact" }
   ],
   "about": "I work at the intersection of operational accuracy, business support, and process discipline. My background includes banking operations, trade-related static data activities, rate management, account maintenance, and change support. I am now shaping that experience into a stronger technology-enabled profile focused on workflow improvement, reporting visibility, and dependable delivery.",
@@ -39,6 +41,20 @@
     {
       "title": "Process Improvement",
       "description": "Interested in making workflows clearer, faster, and easier to track through better structure and simple digital tools."
+    }
+  ],
+  "heroStats": [
+    {
+      "value": "2021",
+      "label": "Started at SCB"
+    },
+    {
+      "value": "3",
+      "label": "Career environments"
+    },
+    {
+      "value": "16+",
+      "label": "Operational strengths"
     }
   ],
   "experience": [
@@ -110,6 +126,15 @@
       "description": "A simple workflow idea for handling account setup, amendment requests, approvals, and audit notes with better visibility."
     }
   ],
+  "chatbot": {
+    "greeting": "Hi, I can answer quick questions about Dinakaran's background, skills, experience, resume, and project ideas.",
+    "suggestions": [
+      "What does Dinakaran do at SCB?",
+      "What skills does he have?",
+      "Show project ideas",
+      "How can I contact him?"
+    ]
+  },
   "contact": {
     "email": "dina257ma@gmail.com",
     "location": "Hosur, Tamil Nadu, India",

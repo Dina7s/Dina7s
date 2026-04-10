@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import profile from "./data/profile.json";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
@@ -6,13 +7,33 @@ import { ExperienceTimeline } from "./components/ExperienceTimeline";
 import { SkillsGrid } from "./components/SkillsGrid";
 import { ContactCard } from "./components/ContactCard";
 import { Footer } from "./components/Footer";
+import { Chatbot } from "./components/Chatbot";
 
 function App() {
+  const [theme, setTheme] = useState(() => {
+    if (typeof window === "undefined") return "dark";
+    return window.localStorage.getItem("theme-preference") || "dark";
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    window.localStorage.setItem("theme-preference", theme);
+  }, [theme]);
+
+  function toggleTheme() {
+    setTheme((current) => (current === "dark" ? "light" : "dark"));
+  }
+
   return (
     <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
-      <Header links={profile.navigation} />
+      <div className="site-glow site-glow-one" />
+      <div className="site-glow site-glow-two" />
+
+      <Header links={profile.navigation} theme={theme} onToggleTheme={toggleTheme} />
+
       <main className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 pb-16 pt-6 sm:px-8 lg:px-10">
         <Hero profile={profile} />
+
         <Section
           id="about"
           eyebrow="About"
@@ -98,7 +119,9 @@ function App() {
           <ContactCard contact={profile.contact} />
         </Section>
       </main>
+
       <Footer name={profile.name} />
+      <Chatbot profile={profile} />
     </div>
   );
 }

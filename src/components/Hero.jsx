@@ -9,9 +9,16 @@ export function Hero({ profile }) {
   return (
     <section
       id="home"
-      className="hero-panel relative overflow-hidden rounded-[2rem] border border-white/10 px-6 py-10 sm:px-8 sm:py-14 lg:px-12"
+      className="hero-panel relative overflow-hidden rounded-[2rem] border border-[var(--color-line)] px-6 py-10 sm:px-8 sm:py-14 lg:px-12"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(217,119,6,0.18),_transparent_34%),radial-gradient(circle_at_bottom_right,_rgba(56,189,248,0.14),_transparent_30%)]" />
+      <motion.div
+        aria-hidden="true"
+        initial={{ opacity: 0.45, scale: 0.96 }}
+        animate={{ opacity: 0.92, scale: 1.05 }}
+        transition={{ duration: 6, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+        className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_var(--hero-glow-1),_transparent_34%),radial-gradient(circle_at_bottom_right,_var(--hero-glow-2),_transparent_30%)]"
+      />
+
       <div className="relative grid gap-10 lg:grid-cols-[1.4fr_0.8fr]">
         <motion.div initial="hidden" animate="show" variants={fadeUp} transition={{ duration: 0.6 }}>
           <p className="text-sm uppercase tracking-[0.35em] text-[var(--color-accent)]">Portfolio</p>
@@ -23,7 +30,7 @@ export function Hero({ profile }) {
           <p className="mt-4 max-w-3xl text-base leading-8 text-[var(--color-soft)]">{profile.summary}</p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a className="button-primary" href={profile.resumeFile} download>
-              Download Resume
+              Download Improved Resume PDF
             </a>
             <a className="button-secondary" href={profile.github} target="_blank" rel="noreferrer">
               View GitHub
@@ -44,15 +51,14 @@ export function Hero({ profile }) {
               Supporting trade-related static data operations with ownership across rates, account maintenance, testing, and process controls.
             </p>
           </div>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-            <div className="metric-card">
-              <span className="metric-value">2021</span>
-              <span className="metric-label">Started at SCB</span>
-            </div>
-            <div className="metric-card">
-              <span className="metric-value">16+</span>
-              <span className="metric-label">Core operational strengths</span>
-            </div>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+            {profile.heroStats.map((item) => (
+              <div key={item.label} className="metric-card">
+                <span className="metric-value">{item.value}</span>
+                <span className="metric-label">{item.label}</span>
+              </div>
+            ))}
           </div>
         </motion.aside>
       </div>

@@ -22,7 +22,10 @@ export function ExperienceTimeline({ experience }) {
           </div>
           <ul className="mt-6 grid gap-3 text-sm leading-7 text-[var(--color-soft)]">
             {item.highlights.map((point) => (
-              <li key={point} className="rounded-2xl border border-white/6 bg-black/10 px-4 py-3">
+              <li
+                key={point}
+                className="rounded-2xl border border-[var(--color-line)] bg-[var(--color-card)] px-4 py-3 transition duration-300 hover:-translate-y-1"
+              >
                 {point}
               </li>
             ))}

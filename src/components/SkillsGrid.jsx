@@ -6,8 +6,8 @@ export function SkillsGrid({ skills }) {
       {skills.map((skill, index) => (
         <motion.div
           key={skill}
-          initial={{ opacity: 0, scale: 0.96 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, scale: 0.96, y: 10 }}
+          whileInView={{ opacity: 1, scale: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.35, delay: index * 0.03 }}
           className="skill-pill"

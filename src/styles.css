@@ -2,19 +2,40 @@
 
 :root {
   --color-bg: #0a111c;
-  --color-panel: rgba(17, 26, 40, 0.82);
+  --color-panel: rgba(15, 25, 39, 0.82);
+  --color-card: rgba(255, 255, 255, 0.04);
   --color-text: #f4efe7;
   --color-soft: #c4ced9;
   --color-muted: #8e9aac;
-  --color-accent: #f59e0b;
-  --color-warm: #f6c989;
+  --color-accent: #ffb347;
+  --color-warm: #ffd6a0;
+  --color-line: rgba(255, 255, 255, 0.09);
+  --hero-glow-1: rgba(255, 168, 76, 0.22);
+  --hero-glow-2: rgba(56, 189, 248, 0.18);
+  --header-bg: rgba(10, 17, 28, 0.74);
   --shadow-soft: 0 24px 80px rgba(0, 0, 0, 0.24);
   color: var(--color-text);
   background:
-    radial-gradient(circle at top left, rgba(245, 158, 11, 0.08), transparent 28%),
+    radial-gradient(circle at top left, rgba(255, 168, 76, 0.1), transparent 28%),
     radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.08), transparent 26%),
     linear-gradient(180deg, #09111b 0%, #0d1724 45%, #0a111c 100%);
   font-family: Georgia, "Times New Roman", serif;
+}
+
+[data-theme="light"] {
+  --color-bg: #f5efe5;
+  --color-panel: rgba(255, 252, 247, 0.88);
+  --color-card: rgba(255, 255, 255, 0.7);
+  --color-text: #1e2430;
+  --color-soft: #4d5a6f;
+  --color-muted: #7d8797;
+  --color-accent: #b35c2e;
+  --color-warm: #8d4a1f;
+  --color-line: rgba(30, 36, 48, 0.1);
+  --hero-glow-1: rgba(255, 154, 77, 0.28);
+  --hero-glow-2: rgba(22, 163, 184, 0.16);
+  --header-bg: rgba(245, 239, 229, 0.78);
+  --shadow-soft: 0 18px 50px rgba(43, 54, 72, 0.1);
 }
 
 html {
@@ -25,6 +46,9 @@ body {
   margin: 0;
   min-width: 320px;
   background: transparent;
+  transition:
+    background 240ms ease,
+    color 240ms ease;
 }
 
 a {
@@ -36,33 +60,61 @@ a {
   box-sizing: border-box;
 }
 
+.site-glow {
+  pointer-events: none;
+  position: fixed;
+  z-index: 0;
+  width: 24rem;
+  height: 24rem;
+  border-radius: 999px;
+  filter: blur(70px);
+  opacity: 0.26;
+}
+
+.site-glow-one {
+  top: 4rem;
+  left: -6rem;
+  background: rgba(255, 168, 76, 0.24);
+}
+
+.site-glow-two {
+  right: -6rem;
+  bottom: 6rem;
+  background: rgba(56, 189, 248, 0.18);
+}
+
 .panel {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.03);
+  position: relative;
+  z-index: 1;
+  border: 1px solid var(--color-line);
+  background: var(--color-card);
   border-radius: 1.5rem;
   padding: 1.25rem;
   box-shadow: var(--shadow-soft);
 }
 
 .hero-panel {
+  position: relative;
+  z-index: 1;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
-    rgba(13, 23, 36, 0.9);
+    linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.01)),
+    var(--color-panel);
   box-shadow: var(--shadow-soft);
 }
 
 .timeline-card {
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--color-line);
   border-radius: 1.5rem;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015));
   padding: 1.5rem;
+  box-shadow: var(--shadow-soft);
 }
 
 .metric-card {
   border-radius: 1.25rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--color-line);
   padding: 1rem 1.1rem;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--color-card);
 }
 
 .metric-value {
@@ -96,13 +148,14 @@ a {
 }
 
 .button-primary {
-  background: var(--color-accent);
+  background: linear-gradient(135deg, var(--color-accent), var(--color-warm));
   color: #101010;
+  box-shadow: 0 12px 30px rgba(255, 168, 76, 0.22);
 }
 
 .button-secondary {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-line);
+  background: var(--color-card);
   color: var(--color-text);
 }
 
@@ -113,16 +166,120 @@ a {
 
 .skill-pill {
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--color-line);
+  background: var(--color-card);
   padding: 0.95rem 1rem;
   text-align: center;
   font-size: 0.95rem;
   color: var(--color-soft);
+  box-shadow: var(--shadow-soft);
+}
+
+.theme-toggle {
+  border: 1px solid var(--color-line);
+  background: var(--color-card);
+  color: var(--color-text);
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  font-size: 0.85rem;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
+}
+
+.chatbot-shell {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 60;
+  width: min(24rem, calc(100vw - 1.5rem));
+}
+
+.chatbot-panel {
+  border: 1px solid var(--color-line);
+  background: color-mix(in srgb, var(--color-panel) 92%, transparent);
+  border-radius: 1.75rem;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  backdrop-filter: blur(18px);
+}
+
+.chatbot-fab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  min-width: 54px;
+  border-radius: 999px;
+  border: 1px solid var(--color-line);
+  background: linear-gradient(135deg, var(--color-accent), var(--color-warm));
+  color: #101010;
+  font-weight: 700;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+}
+
+.chatbot-bubble-user,
+.chatbot-bubble-bot {
+  border-radius: 1.2rem;
+  padding: 0.85rem 1rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.chatbot-bubble-user {
+  background: linear-gradient(135deg, var(--color-accent), var(--color-warm));
+  color: #111;
+}
+
+.chatbot-bubble-bot {
+  background: var(--color-card);
+  color: var(--color-soft);
+  border: 1px solid var(--color-line);
+}
+
+.chatbot-chip {
+  border: 1px solid var(--color-line);
+  background: transparent;
+  color: var(--color-soft);
+  border-radius: 999px;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.8rem;
+}
+
+.chatbot-input {
+  width: 100%;
+  border-radius: 999px;
+  border: 1px solid var(--color-line);
+  background: var(--color-card);
+  color: var(--color-text);
+  padding: 0.85rem 1rem;
+}
+
+.chatbot-input::placeholder {
+  color: var(--color-muted);
+}
+
+.chatbot-send {
+  border-radius: 999px;
+  padding: 0.85rem 1rem;
+  border: 0;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-warm));
+  color: #101010;
+  font-weight: 700;
 }
 
 @media (max-width: 640px) {
   :root {
     font-size: 15px;
+  }
+
+  .chatbot-shell {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    width: calc(100vw - 1rem);
   }
 }
