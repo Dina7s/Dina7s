@@ -4,6 +4,7 @@ Banking operations professional with experience in static data management, trade
 
 ## Portfolio Website
 - Live site: [https://dina7s.github.io/Dina7s/](https://dina7s.github.io/Dina7s/)
+- Resume: The website downloads a no-phone markdown resume generated from the portfolio source.
 
 ## Currently Working At SCB
 - Team Lead - Static Data Unit (Trade)

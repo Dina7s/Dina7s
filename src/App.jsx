@@ -8,6 +8,10 @@ import { SkillsGrid } from "./components/SkillsGrid";
 import { ContactCard } from "./components/ContactCard";
 import { Footer } from "./components/Footer";
 import { Chatbot } from "./components/Chatbot";
+import { RecruiterSnapshot } from "./components/RecruiterSnapshot";
+import { ProcessExpertise } from "./components/ProcessExpertise";
+import { CaseStudies } from "./components/CaseStudies";
+import { ResumePreview } from "./components/ResumePreview";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -33,6 +37,15 @@ function App() {
 
       <main className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 pb-16 pt-6 sm:px-8 lg:px-10">
         <Hero profile={profile} />
+
+        <Section
+          id="snapshot"
+          eyebrow="Recruiter Snapshot"
+          title="A quick view of the profile and fit."
+          intro="This section is built for recruiters and hiring managers who need to understand the profile quickly."
+        >
+          <RecruiterSnapshot items={profile.recruiterSnapshot} />
+        </Section>
 
         <Section
           id="about"
@@ -75,6 +88,15 @@ function App() {
         </Section>
 
         <Section
+          id="process"
+          eyebrow="Process Expertise"
+          title="Banking operations areas I understand in practice."
+          intro="The portfolio now highlights real operating knowledge, not just generic skills, so the profile is clearer for banking operations and process analyst roles."
+        >
+          <ProcessExpertise items={profile.processExpertise} />
+        </Section>
+
+        <Section
           id="experience"
           eyebrow="Experience"
           title="Career path shaped by control, accuracy, and delivery."
@@ -94,20 +116,29 @@ function App() {
 
         <Section
           id="projects"
-          eyebrow="Projects"
-          title="Portfolio directions aligned with operations and workflow improvement."
-          intro="These project concepts reflect the kind of practical digital work that connects well with my background in banking operations and structured process execution."
+          eyebrow="Case Studies"
+          title="Project concepts aligned with operations and workflow improvement."
+          intro="These case-study concepts show how banking operations experience can translate into useful digital tools, reporting, and process visibility."
         >
-          <div className="grid gap-4 md:grid-cols-3">
-            {profile.projects.map((project) => (
-              <article key={project.name} className="panel">
-                <h3 className="text-xl font-semibold text-[var(--color-text)]">{project.name}</h3>
-                <p className="mt-3 text-sm leading-7 text-[var(--color-soft)]">
-                  {project.description}
-                </p>
-              </article>
-            ))}
-          </div>
+          <CaseStudies projects={profile.projects} />
+        </Section>
+
+        <Section
+          id="learning"
+          eyebrow="Learning"
+          title="Current learning areas for tech-enabled operations."
+          intro="These learning areas support a practical transition from banking operations into reporting, workflow improvement, and digital operations support."
+        >
+          <SkillsGrid skills={profile.learning} />
+        </Section>
+
+        <Section
+          id="resume-preview"
+          eyebrow="Resume"
+          title="Resume preview with no public phone number."
+          intro="The download button now generates this markdown resume directly from the app, so it does not rely on a public-folder PDF path."
+        >
+          <ResumePreview />
         </Section>
 
         <Section

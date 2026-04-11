@@ -19,6 +19,16 @@ export function Header({ links, theme, onToggleTheme }) {
               </a>
             ))}
           </nav>
+          <details className="mobile-menu md:hidden">
+            <summary>Menu</summary>
+            <nav className="mobile-menu-panel">
+              {links.map((link) => (
+                <a key={link.href} href={link.href}>
+                  {link.label}
+                </a>
+              ))}
+            </nav>
+          </details>
           <button type="button" className="theme-toggle" onClick={onToggleTheme} aria-label="Toggle color theme">
             <span>{theme === "dark" ? "Light mode" : "Dark mode"}</span>
           </button>

@@ -3,12 +3,13 @@
   "title": "Team Lead - Banking Operations / Static Data",
   "tagline": "Banking operations professional with hands-on experience in static data, trade support, controls, and process improvement.",
   "summary": "Experienced in banking operations, rate administration, SWIFT account maintenance, charge code updates, and testing support within control-sensitive environments. Building a stronger profile around digital workflows, operational reporting, and technology-enabled process improvement.",
-  "resumeFile": "/Dina7s/Dinakaran-Resume-Improved.pdf",
+  "resumeFileName": "Dinakaran-S-Resume.md",
   "github": "https://github.com/Dina7s",
   "navigation": [
     { "label": "Home", "href": "#home" },
     { "label": "About", "href": "#about" },
     { "label": "Value", "href": "#strengths" },
+    { "label": "Process", "href": "#process" },
     { "label": "Experience", "href": "#experience" },
     { "label": "Skills", "href": "#skills" },
     { "label": "Projects", "href": "#projects" },
@@ -55,6 +56,50 @@
     {
       "value": "16+",
       "label": "Operational strengths"
+    }
+  ],
+  "recruiterSnapshot": [
+    {
+      "label": "Current Role",
+      "value": "Team Lead - Static Data Unit (Trade)"
+    },
+    {
+      "label": "Best Fit",
+      "value": "Banking Operations, Static Data, Process Analyst roles"
+    },
+    {
+      "label": "Core Value",
+      "value": "Accurate execution, control awareness, and workflow improvement"
+    },
+    {
+      "label": "Location",
+      "value": "Hosur, Tamil Nadu"
+    }
+  ],
+  "processExpertise": [
+    {
+      "title": "Static Data Operations",
+      "description": "Maintains sensitive reference data used by trade and operational teams, with attention to completeness, approvals, and downstream impact."
+    },
+    {
+      "title": "Rate Management",
+      "description": "Handles Forex rate, FTP, and Liquidity Premium updates where timeliness and accuracy directly support business continuity."
+    },
+    {
+      "title": "SWIFT & Charge Codes",
+      "description": "Supports account creation, account amendments, and charge code maintenance for operational processing needs."
+    },
+    {
+      "title": "Testing & Change Support",
+      "description": "Participates in UVT testing for new implementations, helping validate readiness before change rollout."
+    },
+    {
+      "title": "Controls & Compliance",
+      "description": "Works with a control-first mindset across audit-sensitive activities, regulatory requirements, and process standards."
+    },
+    {
+      "title": "Workflow Improvement",
+      "description": "Looks for opportunities to simplify handoffs, reduce ambiguity, and make work easier to track."
     }
   ],
   "experience": [
@@ -115,16 +160,32 @@
   "projects": [
     {
       "name": "Banking Process Dashboard",
-      "description": "A dashboard concept for tracking tasks, workflow status, exceptions, and service timelines in an operations team."
+      "description": "A dashboard concept for tracking tasks, workflow status, exceptions, and service timelines in an operations team.",
+      "problem": "Operations teams need quick visibility into pending work, SLA risk, and exception volume.",
+      "approach": "Create a simple dashboard layout with task status, priority, aging, exception notes, and owner fields.",
+      "outcome": "Helps demonstrate reporting mindset and practical understanding of banking operations workflows."
     },
     {
       "name": "Rate Management Simulator",
-      "description": "A training-oriented concept that explains how rate updates move through validation, approval, and final maintenance steps."
+      "description": "A training-oriented concept that explains how rate updates move through validation, approval, and final maintenance steps.",
+      "problem": "Rate update processes can be difficult for new joiners to understand without a safe practice environment.",
+      "approach": "Simulate rate entry, validation checks, approval state, and final update confirmation.",
+      "outcome": "Shows how operational knowledge can be converted into training and digital enablement."
     },
     {
       "name": "Static Data Workflow Tool",
-      "description": "A simple workflow idea for handling account setup, amendment requests, approvals, and audit notes with better visibility."
+      "description": "A simple workflow idea for handling account setup, amendment requests, approvals, and audit notes with better visibility.",
+      "problem": "Static data requests require traceability, clear ownership, and accurate completion notes.",
+      "approach": "Track request type, required documents, checker status, approval notes, and completion remarks.",
+      "outcome": "Positions the profile toward process analyst and operations transformation opportunities."
     }
+  ],
+  "learning": [
+    "Excel reporting and dashboard thinking",
+    "SQL basics for operational data analysis",
+    "Power BI concepts for management reporting",
+    "React portfolio building",
+    "Workflow automation fundamentals"
   ],
   "chatbot": {
     "greeting": "Hi, I can answer quick questions about Dinakaran's background, skills, experience, resume, and project ideas.",

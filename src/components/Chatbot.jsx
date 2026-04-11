@@ -26,7 +26,7 @@ function buildAnswer(input, profile) {
   }
 
   if (query.includes("resume")) {
-    return "You can download the improved resume PDF from the hero section. A structured JSON version also exists for portfolio and profile use.";
+    return "You can download the no-phone markdown resume from the hero section or preview it directly on the page.";
   }
 
   return "I can help with background, SCB responsibilities, skills, project ideas, contact details, or resume questions. Try one of the quick prompts below.";
