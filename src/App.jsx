@@ -136,7 +136,7 @@ function App() {
           id="resume-preview"
           eyebrow="Resume"
           title="Resume preview with no public phone number."
-          intro="The download button now generates this markdown resume directly from the app, so it does not rely on a public-folder PDF path."
+          intro="The download button converts this markdown resume into a polished PDF directly in the browser, so it does not rely on a public-folder PDF path."
         >
           <ResumePreview />
         </Section>

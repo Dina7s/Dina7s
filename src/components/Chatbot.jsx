@@ -26,7 +26,7 @@ function buildAnswer(input, profile) {
   }
 
   if (query.includes("resume")) {
-    return "You can download the no-phone markdown resume from the hero section or preview it directly on the page.";
+    return "You can download a polished no-phone PDF resume from the hero section. The PDF is generated from the markdown resume source in the browser.";
   }
 
   return "I can help with background, SCB responsibilities, skills, project ideas, contact details, or resume questions. Try one of the quick prompts below.";

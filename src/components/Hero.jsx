@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import resumeMarkdown from "../data/resume.md?raw";
+import { downloadResumePdf } from "../utils/resumePdf";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -7,16 +8,8 @@ const fadeUp = {
 };
 
 export function Hero({ profile }) {
-  function downloadResume() {
-    const blob = new Blob([resumeMarkdown], { type: "text/markdown;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = profile.resumeFileName;
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-    URL.revokeObjectURL(url);
+  async function downloadResume() {
+    await downloadResumePdf(resumeMarkdown, "Dinakaran-S-Resume.pdf");
   }
 
   return (
@@ -43,7 +36,7 @@ export function Hero({ profile }) {
           <p className="mt-4 max-w-3xl text-base leading-8 text-[var(--color-soft)]">{profile.summary}</p>
           <div className="mt-8 flex flex-wrap gap-4">
             <button className="button-primary" type="button" onClick={downloadResume}>
-              Download Resume MD
+              Download Resume PDF
             </button>
             <a className="button-secondary" href="#resume-preview">
               Preview Resume
